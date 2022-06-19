@@ -1,20 +1,121 @@
-.num0{
+body{
+    background-color: #999999;
+}
+
+.title{
+    color: #ffffff ;
+}
+.salah{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+form{
+    border-radius: 5%;
+    margin-top: 50px;
+    border: #111 solid;
+    width:40%   ;
+    background-color:rgba(62, 58, 58, 0.9);
+    
+    
+}
+h1{
+    color: #1f204e;
+}
+.num{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center ;
+}
+.img{
+    width: 20%;
+}
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+}
+.num0{
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 .num3{
-    background-color: red;
+    
+    margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 .num4{
-    background-color: yellow;
+    margin-top: 10px;
     display:flex;
-    justify-content: end;
+    justify-content: center;
+    margin-left : 300px;
 }
-.num1{
-    background-color: aqua;
+.nav_menu {
+list-style-type: none;
+display: flex;
 }
-.num2{
-    background-color: blue;
+.vid{
+     width: 35px;
+  height: 5px;
+  background-color: black;
+
+  
 }
+.beji{
+    display: none;
+}
+
+li {
+  float: right;
+}
+
+li a {
+ 
+  display: block;
+  color: white;
+  
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+
+  background-color: #111;
+}
+@media screen and (max-width :792px ) {
+    .nav_menu{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+    .beji{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .beji:hover{
+        background-color: rgb(45, 42, 42);
+        cursor:pointer;
+    }
+    .num0{
+     display:flex ;
+     flex-direction:column ;
+    gap: 20px;
+        } 
+    .num3{
+        width: 100%;
+    }
+    .num4{
+        display: flex;
+        flex-direction: center;
+    }
+    }
